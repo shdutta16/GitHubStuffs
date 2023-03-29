@@ -16,4 +16,4 @@
 12. Commit the changes: `git commit -m "<comments>"`
 13. Push the changes : `git push <symbolic-name> <branch-name>`
 
-Whenever you make changes to the README file or any other file in remote through the browser, do a `git pull <symbolic> <branch-name>` in the local repo area to sync those changes with the local repo.
+Whenever you make changes to the README file or any other file in remote through the browser, do a `git pull <symbolic> <branch-name>` in the local repo area to sync those changes with the local repo. Also, you are encouraged to git pull first, before making any local changes and pushing them. 
