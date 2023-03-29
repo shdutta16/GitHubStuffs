@@ -1,6 +1,19 @@
 # GitHub Stuffs
 
 ## Uploading a repo from existing code-setup
-1. First create repo in git
-2. From the code-setup directory tnitialize git: `git-init`
-3. Git clone the repo using https link
+1. First create empty repo in git
+2. From the root directory of the code-setup initialize git: `git init`
+3. Create a `README.md` file and then add that: `git add README.md`
+4. Commit the changes: `git commit -m "Added README"`
+5. Add remote: `git remote add <remote-name-in-local (symbolic name)> <actual-remote-location (url)>`
+   For example: `git remote add MonoHiggsToGG git@github.com:shdutta16/MonoHiggsToGG.git`
+7. Check remote: `git remote -v`
+8. Check status: `git status`
+9. Push the changes: `git push <symbolic-name> <branch-name>`
+   For example: `git push MonoHiggsToGG main`
+10. Check the repo whether the `README.md` file shows up or not. If it's there then you are all set. If not then you are doomed with google search and stuffs. 
+11. Add the files to the repo: `git add <file/directory>`
+12. Commit the changes: `git commit -m "<comments>"`
+13. Push the changes : `git push <symbolic-name> <branch-name>`
+
+Whenever you make changes to the README file or any other file in remote through the browser, do a `git pull <symbolic> <branch-name>` in the local repo area to sync those changes with the local repo.
