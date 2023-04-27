@@ -29,3 +29,4 @@ This error means that the remote branch doesn't exist (at least this is the reas
 1. How to check which branch I am on? -> `git branch`
 2. How to switch to another branch? -> `git checkout <branch-name>`
 3. How to create new branch and switch to it? -> `git checkout -b <branch-name>`
+4. How to check remote? `git remote -v`
