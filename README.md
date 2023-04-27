@@ -17,3 +17,9 @@
 13. Push the changes : `git push <symbolic-name> <branch-name>`
 
 Whenever you make changes to the README file or any other file in remote through the browser, do a `git pull <symbolic> <branch-name>` in the local repo area to sync those changes with the local repo. Also, you are encouraged to git pull first, before making any local changes and pushing them. 
+
+
+## ERROR 1
+error: src refspec main does not match any.
+
+This error means that the remote branch doesn't exist (at least this is the reason because of which I faced this error). The solution was to `checkout` to the proper branch and then `push` the changes. 
