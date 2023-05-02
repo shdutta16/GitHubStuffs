@@ -43,5 +43,5 @@ This error means that the remote branch doesn't exist (at least this is the reas
    
    Normally when push is done like `git push origin master`, it means push from the local branch named `master` to the remote
    branch named `master`. To push to a remote branch with a different
-   name than the local branch, separate the local and remote names with a `:` like `git push origin <local-branch-name>:<remote-branch-name`
+   name than the local branch, separate the local and remote names with a `:` like `git push origin <local-branch-name>:<remote-branch-name>`
       
