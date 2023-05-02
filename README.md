@@ -40,6 +40,7 @@ This error means that the remote branch doesn't exist (at least this is the reas
    git push <symbolic-name> <branch-name>
    ```
 6. How to push contents of local branch to remote branch having different names?
+   
    Normally when push is done like `git push origin master`, it means push from the local branch named `master` to the remote
    branch named `master`. To push to a remote branch with a different
    name than the local branch, separate the local and remote names with a `:` like `git push origin <local-branch-name>:<remote-branch-name`
