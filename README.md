@@ -16,7 +16,7 @@
 12. Commit the changes: `git commit -m "<comments>"`
 13. Push the changes : `git push <symbolic-name> <branch-name>`
 
-Whenever you make changes to the README file or any other file in remote through the browser, do a `git pull <symbolic> <branch-name>` in the local repo area to sync those changes with the local repo. Also, you are encouraged to git pull first, before making any local changes and pushing them. 
+Whenever you make changes to the README file or any other file in remote through the browser, do a `git pull <symbolic-name> <branch-name>` in the local repo area to sync those changes with the local repo. Also, you are encouraged to git pull first, before making any local changes and pushing them. 
 
 
 ## ERROR 1
@@ -25,8 +25,15 @@ error: src refspec main does not match any.
 This error means that the remote branch doesn't exist (at least this is the reason because of which I faced this error). The solution was to `checkout` to the proper branch and then `push` the changes. For more details go to [link](https://www.freecodecamp.org/news/error-src-refspec-master-does-not-match-any-how-to-fix-in-git/).
 
 
-## How to
+## How to's
 1. How to check which branch I am on? -> `git branch`
 2. How to switch to another branch? -> `git checkout <branch-name>`
 3. How to create new branch and switch to it? -> `git checkout -b <branch-name>`
 4. How to check remote? `git remote -v`
+5. How to delete a file in remote but not locally? 
+   ```
+   git rm --cached <name of file in remote>
+   git commit -m "<comments>"
+   git push <symbolic-name> <branch-name>
+   ```
+      
