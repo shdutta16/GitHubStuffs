@@ -22,7 +22,7 @@ Whenever you make changes to the README file or any other file in remote through
 ## ERROR 1
 error: src refspec main does not match any.
 
-This error means that the remote branch doesn't exist (at least this is the reason because of which I faced this error). The solution was to `checkout` to the proper branch and then `push` the changes. For more details go to [link](https://www.freecodecamp.org/news/error-src-refspec-master-does-not-match-any-how-to-fix-in-git/).
+This error means that the remote branch doesn't exist (at least this is the reason because of which I faced this error). The solution was to `checkout` to the proper branch and then `push` the changes. For more details go to [link](https://www.freecodecamp.org/news/error-src-refspec-master-does-not-match-any-how-to-fix-in-git/). Another common reason to face this error is when no ```git commit``` is done before pushing the changes. 
 
 
 ## How to's
