@@ -16,6 +16,8 @@
 12. Commit the changes: `git commit -m "<comments>"`
 13. Push the changes : `git push <symbolic-name> <branch-name>`
 
+`<symbolic-name> = <remote-name>`
+
 Whenever you make changes to the README file or any other file in remote through the browser, do a `git pull <symbolic-name> <branch-name>` in the local repo area to sync those changes with the local repo. Also, you are encouraged to git pull first, before making any local changes and pushing them. 
 
 
@@ -44,4 +46,10 @@ This error means that the remote branch doesn't exist (at least this is the reas
    Normally when push is done like `git push origin master`, it means push from the local branch named `master` to the remote
    branch named `master`. To push to a remote branch with a different
    name than the local branch, separate the local and remote names with a `:` like `git push origin <local-branch-name>:<remote-branch-name>`
+   
+7. How to remove branch both locally and remotely?
+   ```
+   git branch -d <branch-name>                # to delete branch locally
+   git push -d <remote-name> <branch-name>    # to delete branch remotely 
+   ```
       
