@@ -52,4 +52,13 @@ This error means that the remote branch doesn't exist (at least this is the reas
    git branch -d <branch-name>                # to delete branch locally
    git push -d <remote-name> <branch-name>    # to delete branch remotely 
    ```
+8. How to add existing remote?
+   ```
+   git init
+   git remote add <remote-name-in-local (symbolic-name)> <actual-remote-location (url with git@github.com)>
+   git remote -v   # Check the remote name
+   git status      # Check the status
+   git init
+   git pull <symbolic-name> <branch-name>
+   ```
       
