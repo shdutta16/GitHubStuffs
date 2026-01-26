@@ -61,4 +61,21 @@ This error means that the remote branch doesn't exist (at least this is the reas
    git init
    git pull <symbolic-name> <branch-name>
    ```
+
+9. How to make available .ssh or ssh authentication within singularity for github?
+   Inside host do the following:
+   ```
+   eval "$(ssh-agent -s)"   # Check if ssh agent is active
+   ssh-add ~/.ssh/id_ed25519  # Use the key used to clone the main repo
+   ```
+   While starting container bind the authentication, for example:
+   ```
+   sudo singularity shell -B $geant_dir:/simulation -B /tmp:/tmp -B $SSH_AUTH_SOCK:$SSH_AUTH_SOCK --env SSH_AUTH_SOCK=$SSH_AUTH_SOCK --containall $container
+   ```
+   Inside container check the ssh access:
+   ```
+   ssh-add -l
+   ```
+   
+   
       
